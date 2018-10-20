@@ -1,40 +1,14 @@
-{ DAVI
-Bonjour, 
-1-Pour commence on a fait la maketation du site avec SKETCH.
-2-En  suite en a creer le formulaire(en HTML et CSS) pour la partie connexion et inscripton.
-3-Installation du générateur de backend
-npm install express-generator -g
-3-2-Création du backend
-express --view=ejs --git myapp
-La commande initialise un nouveau repertoire
-3-3-Installation des modules
-(cd myapp
-    - Se positionner dans le répertoire du backend
-    - Installation des modules
-    - npm install)
-3-4-Lancer le serveur
-    -npm start
-4-Intalltion BDD et la SESSION
-4-1-Installation du module
-    -npm install express-session --save
-5-Import du module(dans l'app, ligne 10)
-var session = require("express-session"); 
-6- Paramètrage(dans l'app ligne 12)
-app.use(
- session({ 
-  secret: 'a4f8071f-c873-4447-8ee2',
-  resave: false,
-  saveUninitialized: false,
- })
-);   
-7-Debut pour tester les routes.
+Vivo
+Création d’un MVP en Mode AGILE d’une Web App permettant de disposer d'un carnet de santé digital réalisé en Node JS et une base de donnés MongoDB avec une contrainte de temps de deux semaines.
 
-!!! ne pas oublié de mettre le button en "submit" pour valider le formulaire.
-8-chagement input DATE(avant etais en STRING) chagement DATE
+Liste des fonctionnalités:
 
-9-Installation du module mongoose
-npm install mongoose --save
-
-10-initialiser la connexion dans le site pour chaque utilisateur.
-}
+Connexion ou inscription d'un utilisateur.
+Possibilité de voir son dashboard utilisateur.
+Possibilité d'ajouter une équipe soignante ainsi que les informations de son équipe soignante.
+Possibilité d'ajouter un épisode relatif à sa santé (Par exemple une consultation ou une maladie) et d'y associer des infos types date de mise à jour, pictogramme associé etc...
+Possibilité d'en voir plus sur un épisode et d'y ajouter au sein de ce dernier des informations concernants les rendez-vous (De voir aussi les lieux de rendez-vous sur une Google Map) pris ou alors d'ajouter des notes pour chaque passage chez un spécialiste pour une même maladie.
+Possibilité de modifier ses informations utilisateurs.
+Possibilité de supprimer un rendez-vous, un spécialiste ou un évènement.
+Site visible sur : https://myappvivo.herokuapp.com/
 
